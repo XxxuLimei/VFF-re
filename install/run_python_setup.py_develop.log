@@ -1,0 +1,204 @@
+/home/xilm/anaconda3/lib/python3.9/site-packages/setuptools/dist.py:534: UserWarning: Normalizing '0.3.0+0000000' to '0.3.0+0'
+  warnings.warn(tmpl.format(**locals()))
+running develop
+/home/xilm/anaconda3/lib/python3.9/site-packages/setuptools/command/easy_install.py:144: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/home/xilm/anaconda3/lib/python3.9/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+writing pcdet.egg-info/PKG-INFO
+writing dependency_links to pcdet.egg-info/dependency_links.txt
+writing requirements to pcdet.egg-info/requires.txt
+writing top-level names to pcdet.egg-info/top_level.txt
+reading manifest file 'pcdet.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'pcdet.egg-info/SOURCES.txt'
+running build_ext
+/home/xilm/anaconda3/lib/python3.9/site-packages/torch/utils/cpp_extension.py:782: UserWarning: The detected CUDA version (11.2) has a minor version mismatch with the version that was used to compile PyTorch (11.1). Most likely this shouldn't be a problem.
+  warnings.warn(CUDA_MISMATCH_WARN.format(cuda_str_version, torch.version.cuda))
+building 'pcdet.ops.iou3d_nms.iou3d_nms_cuda' extension
+Emitting ninja build file /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/build.ninja...
+Compiling objects...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+g++ -pthread -B /home/xilm/anaconda3/compiler_compat -shared -Wl,-rpath,/home/xilm/anaconda3/lib -Wl,-rpath-link,/home/xilm/anaconda3/lib -L/home/xilm/anaconda3/lib -L/home/xilm/anaconda3/lib -Wl,-rpath,/home/xilm/anaconda3/lib -Wl,-rpath-link,/home/xilm/anaconda3/lib -L/home/xilm/anaconda3/lib /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/iou3d_nms/src/iou3d_cpu.o /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/iou3d_nms/src/iou3d_nms.o /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/iou3d_nms/src/iou3d_nms_api.o /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/iou3d_nms/src/iou3d_nms_kernel.o -L/home/xilm/anaconda3/lib/python3.9/site-packages/torch/lib -L/usr/local/cuda/lib64 -lc10 -ltorch -ltorch_cpu -ltorch_python -lcudart -lc10_cuda -ltorch_cuda_cu -ltorch_cuda_cpp -o build/lib.linux-x86_64-cpython-39/pcdet/ops/iou3d_nms/iou3d_nms_cuda.cpython-39-x86_64-linux-gnu.so
+building 'pcdet.ops.roiaware_pool3d.roiaware_pool3d_cuda' extension
+Emitting ninja build file /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/build.ninja...
+Compiling objects...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+g++ -pthread -B /home/xilm/anaconda3/compiler_compat -shared -Wl,-rpath,/home/xilm/anaconda3/lib -Wl,-rpath-link,/home/xilm/anaconda3/lib -L/home/xilm/anaconda3/lib -L/home/xilm/anaconda3/lib -Wl,-rpath,/home/xilm/anaconda3/lib -Wl,-rpath-link,/home/xilm/anaconda3/lib -L/home/xilm/anaconda3/lib /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/roiaware_pool3d/src/roiaware_pool3d.o /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/roiaware_pool3d/src/roiaware_pool3d_kernel.o -L/home/xilm/anaconda3/lib/python3.9/site-packages/torch/lib -L/usr/local/cuda/lib64 -lc10 -ltorch -ltorch_cpu -ltorch_python -lcudart -lc10_cuda -ltorch_cuda_cu -ltorch_cuda_cpp -o build/lib.linux-x86_64-cpython-39/pcdet/ops/roiaware_pool3d/roiaware_pool3d_cuda.cpython-39-x86_64-linux-gnu.so
+building 'pcdet.ops.roipoint_pool3d.roipoint_pool3d_cuda' extension
+Emitting ninja build file /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/build.ninja...
+Compiling objects...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+g++ -pthread -B /home/xilm/anaconda3/compiler_compat -shared -Wl,-rpath,/home/xilm/anaconda3/lib -Wl,-rpath-link,/home/xilm/anaconda3/lib -L/home/xilm/anaconda3/lib -L/home/xilm/anaconda3/lib -Wl,-rpath,/home/xilm/anaconda3/lib -Wl,-rpath-link,/home/xilm/anaconda3/lib -L/home/xilm/anaconda3/lib /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/roipoint_pool3d/src/roipoint_pool3d.o /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/roipoint_pool3d/src/roipoint_pool3d_kernel.o -L/home/xilm/anaconda3/lib/python3.9/site-packages/torch/lib -L/usr/local/cuda/lib64 -lc10 -ltorch -ltorch_cpu -ltorch_python -lcudart -lc10_cuda -ltorch_cuda_cu -ltorch_cuda_cpp -o build/lib.linux-x86_64-cpython-39/pcdet/ops/roipoint_pool3d/roipoint_pool3d_cuda.cpython-39-x86_64-linux-gnu.so
+building 'pcdet.ops.pointnet2.pointnet2_stack.pointnet2_stack_cuda' extension
+Emitting ninja build file /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/build.ninja...
+Compiling objects...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+g++ -pthread -B /home/xilm/anaconda3/compiler_compat -shared -Wl,-rpath,/home/xilm/anaconda3/lib -Wl,-rpath-link,/home/xilm/anaconda3/lib -L/home/xilm/anaconda3/lib -L/home/xilm/anaconda3/lib -Wl,-rpath,/home/xilm/anaconda3/lib -Wl,-rpath-link,/home/xilm/anaconda3/lib -L/home/xilm/anaconda3/lib /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/pointnet2/pointnet2_stack/src/ball_query.o /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/pointnet2/pointnet2_stack/src/ball_query_gpu.o /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/pointnet2/pointnet2_stack/src/group_points.o /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/pointnet2/pointnet2_stack/src/group_points_gpu.o /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/pointnet2/pointnet2_stack/src/interpolate.o /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/pointnet2/pointnet2_stack/src/interpolate_gpu.o /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/pointnet2/pointnet2_stack/src/pointnet2_api.o /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/pointnet2/pointnet2_stack/src/sampling.o /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/pointnet2/pointnet2_stack/src/sampling_gpu.o /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/pointnet2/pointnet2_stack/src/voxel_query.o /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/pointnet2/pointnet2_stack/src/voxel_query_gpu.o -L/home/xilm/anaconda3/lib/python3.9/site-packages/torch/lib -L/usr/local/cuda/lib64 -lc10 -ltorch -ltorch_cpu -ltorch_python -lcudart -lc10_cuda -ltorch_cuda_cu -ltorch_cuda_cpp -o build/lib.linux-x86_64-cpython-39/pcdet/ops/pointnet2/pointnet2_stack/pointnet2_stack_cuda.cpython-39-x86_64-linux-gnu.so
+building 'pcdet.ops.pointnet2.pointnet2_batch.pointnet2_batch_cuda' extension
+Emitting ninja build file /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/build.ninja...
+Compiling objects...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+g++ -pthread -B /home/xilm/anaconda3/compiler_compat -shared -Wl,-rpath,/home/xilm/anaconda3/lib -Wl,-rpath-link,/home/xilm/anaconda3/lib -L/home/xilm/anaconda3/lib -L/home/xilm/anaconda3/lib -Wl,-rpath,/home/xilm/anaconda3/lib -Wl,-rpath-link,/home/xilm/anaconda3/lib -L/home/xilm/anaconda3/lib /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/pointnet2/pointnet2_batch/src/ball_query.o /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/pointnet2/pointnet2_batch/src/ball_query_gpu.o /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/pointnet2/pointnet2_batch/src/group_points.o /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/pointnet2/pointnet2_batch/src/group_points_gpu.o /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/pointnet2/pointnet2_batch/src/interpolate.o /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/pointnet2/pointnet2_batch/src/interpolate_gpu.o /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/pointnet2/pointnet2_batch/src/pointnet2_api.o /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/pointnet2/pointnet2_batch/src/sampling.o /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/build/temp.linux-x86_64-cpython-39/pcdet/ops/pointnet2/pointnet2_batch/src/sampling_gpu.o -L/home/xilm/anaconda3/lib/python3.9/site-packages/torch/lib -L/usr/local/cuda/lib64 -lc10 -ltorch -ltorch_cpu -ltorch_python -lcudart -lc10_cuda -ltorch_cuda_cu -ltorch_cuda_cpp -o build/lib.linux-x86_64-cpython-39/pcdet/ops/pointnet2/pointnet2_batch/pointnet2_batch_cuda.cpython-39-x86_64-linux-gnu.so
+copying build/lib.linux-x86_64-cpython-39/pcdet/ops/iou3d_nms/iou3d_nms_cuda.cpython-39-x86_64-linux-gnu.so -> pcdet/ops/iou3d_nms
+copying build/lib.linux-x86_64-cpython-39/pcdet/ops/roiaware_pool3d/roiaware_pool3d_cuda.cpython-39-x86_64-linux-gnu.so -> pcdet/ops/roiaware_pool3d
+copying build/lib.linux-x86_64-cpython-39/pcdet/ops/roipoint_pool3d/roipoint_pool3d_cuda.cpython-39-x86_64-linux-gnu.so -> pcdet/ops/roipoint_pool3d
+copying build/lib.linux-x86_64-cpython-39/pcdet/ops/pointnet2/pointnet2_stack/pointnet2_stack_cuda.cpython-39-x86_64-linux-gnu.so -> pcdet/ops/pointnet2/pointnet2_stack
+copying build/lib.linux-x86_64-cpython-39/pcdet/ops/pointnet2/pointnet2_batch/pointnet2_batch_cuda.cpython-39-x86_64-linux-gnu.so -> pcdet/ops/pointnet2/pointnet2_batch
+Creating /home/xilm/anaconda3/lib/python3.9/site-packages/pcdet.egg-link (link to .)
+pcdet 0.3.0+0 is already the active version in easy-install.pth
+
+Installed /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main
+Processing dependencies for pcdet==0.3.0+0
+Searching for PyYAML==6.0
+Best match: PyYAML 6.0
+Adding PyYAML 6.0 to easy-install.pth file
+
+Using /home/xilm/anaconda3/lib/python3.9/site-packages
+Searching for easydict==1.10
+Best match: easydict 1.10
+Processing easydict-1.10-py3.9.egg
+easydict 1.10 is already the active version in easy-install.pth
+
+Using /home/xilm/anaconda3/lib/python3.9/site-packages/easydict-1.10-py3.9.egg
+Searching for tensorboardX==2.5.1
+Best match: tensorboardX 2.5.1
+Processing tensorboardX-2.5.1-py3.9.egg
+tensorboardX 2.5.1 is already the active version in easy-install.pth
+
+Using /home/xilm/anaconda3/lib/python3.9/site-packages/tensorboardX-2.5.1-py3.9.egg
+Searching for numba==0.53.0
+Best match: numba 0.53.0
+Adding numba 0.53.0 to easy-install.pth file
+
+Using /home/xilm/anaconda3/lib/python3.9/site-packages
+Searching for spconv==2.3.3
+Best match: spconv 2.3.3
+Processing spconv-2.3.3-py3.9-linux-x86_64.egg
+spconv 2.3.3 is already the active version in easy-install.pth
+
+Using /home/xilm/anaconda3/lib/python3.9/site-packages/spconv-2.3.3-py3.9-linux-x86_64.egg
+Searching for torch==1.10.0+cu111
+Best match: torch 1.10.0+cu111
+Adding torch 1.10.0+cu111 to easy-install.pth file
+Installing convert-caffe2-to-onnx script to /home/xilm/anaconda3/bin
+Installing convert-onnx-to-caffe2 script to /home/xilm/anaconda3/bin
+Installing torchrun script to /home/xilm/anaconda3/bin
+
+Using /home/xilm/anaconda3/lib/python3.9/site-packages
+Searching for numpy==1.23.4
+Best match: numpy 1.23.4
+Adding numpy 1.23.4 to easy-install.pth file
+Installing f2py script to /home/xilm/anaconda3/bin
+Installing f2py3 script to /home/xilm/anaconda3/bin
+Installing f2py3.9 script to /home/xilm/anaconda3/bin
+
+Using /home/xilm/anaconda3/lib/python3.9/site-packages
+Searching for protobuf==3.19.6
+Best match: protobuf 3.19.6
+Adding protobuf 3.19.6 to easy-install.pth file
+
+Using /home/xilm/anaconda3/lib/python3.9/site-packages
+Searching for setuptools==67.1.0
+Best match: setuptools 67.1.0
+Adding setuptools 67.1.0 to easy-install.pth file
+
+Using /home/xilm/anaconda3/lib/python3.9/site-packages
+Searching for llvmlite==0.36.0
+Best match: llvmlite 0.36.0
+Adding llvmlite 0.36.0 to easy-install.pth file
+
+Using /home/xilm/anaconda3/lib/python3.9/site-packages
+Searching for cumm==0.4.7
+Best match: cumm 0.4.7
+Processing cumm-0.4.7-py3.9-linux-x86_64.egg
+cumm 0.4.7 is already the active version in easy-install.pth
+
+Using /home/xilm/anaconda3/lib/python3.9/site-packages/cumm-0.4.7-py3.9-linux-x86_64.egg
+Searching for fire==0.4.0
+Best match: fire 0.4.0
+Adding fire 0.4.0 to easy-install.pth file
+
+Using /home/xilm/anaconda3/lib/python3.9/site-packages
+Searching for pybind11==2.10.1
+Best match: pybind11 2.10.1
+Adding pybind11 2.10.1 to easy-install.pth file
+Installing pybind11-config script to /home/xilm/anaconda3/bin
+
+Using /home/xilm/anaconda3/lib/python3.9/site-packages
+Searching for ccimport==0.4.2
+Best match: ccimport 0.4.2
+Processing ccimport-0.4.2-py3.9.egg
+ccimport 0.4.2 is already the active version in easy-install.pth
+
+Using /home/xilm/anaconda3/lib/python3.9/site-packages/ccimport-0.4.2-py3.9.egg
+Searching for pccm==0.4.6
+Best match: pccm 0.4.6
+Processing pccm-0.4.6-py3.9.egg
+pccm 0.4.6 is already the active version in easy-install.pth
+
+Using /home/xilm/anaconda3/lib/python3.9/site-packages/pccm-0.4.6-py3.9.egg
+Searching for typing-extensions==4.3.0
+Best match: typing-extensions 4.3.0
+Adding typing-extensions 4.3.0 to easy-install.pth file
+
+Using /home/xilm/anaconda3/lib/python3.9/site-packages
+Searching for termcolor==2.1.0
+Best match: termcolor 2.1.0
+Adding termcolor 2.1.0 to easy-install.pth file
+
+Using /home/xilm/anaconda3/lib/python3.9/site-packages
+Searching for six==1.16.0
+Best match: six 1.16.0
+Adding six 1.16.0 to easy-install.pth file
+
+Using /home/xilm/anaconda3/lib/python3.9/site-packages
+Searching for requests==2.28.1
+Best match: requests 2.28.1
+Adding requests 2.28.1 to easy-install.pth file
+
+Using /home/xilm/anaconda3/lib/python3.9/site-packages
+Searching for ninja==1.11.1
+Best match: ninja 1.11.1
+Adding ninja 1.11.1 to easy-install.pth file
+Installing ninja script to /home/xilm/anaconda3/bin
+
+Using /home/xilm/anaconda3/lib/python3.9/site-packages
+Searching for portalocker==2.6.0
+Best match: portalocker 2.6.0
+Adding portalocker 2.6.0 to easy-install.pth file
+
+Using /home/xilm/anaconda3/lib/python3.9/site-packages
+Searching for lark==1.1.4
+Best match: lark 1.1.4
+Adding lark 1.1.4 to easy-install.pth file
+
+Using /home/xilm/anaconda3/lib/python3.9/site-packages
+Searching for certifi==2022.9.14
+Best match: certifi 2022.9.14
+Adding certifi 2022.9.14 to easy-install.pth file
+
+Using /home/xilm/anaconda3/lib/python3.9/site-packages
+Searching for urllib3==1.26.11
+Best match: urllib3 1.26.11
+Adding urllib3 1.26.11 to easy-install.pth file
+
+Using /home/xilm/anaconda3/lib/python3.9/site-packages
+Searching for idna==3.3
+Best match: idna 3.3
+Adding idna 3.3 to easy-install.pth file
+
+Using /home/xilm/anaconda3/lib/python3.9/site-packages
+Searching for charset-normalizer==2.0.4
+Best match: charset-normalizer 2.0.4
+Adding charset-normalizer 2.0.4 to easy-install.pth file
+Installing normalizer script to /home/xilm/anaconda3/bin
+
+Using /home/xilm/anaconda3/lib/python3.9/site-packages
+Finished processing dependencies for pcdet==0.3.0+0
