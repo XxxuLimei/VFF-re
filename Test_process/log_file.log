@@ -312,3 +312,100 @@ eval:   0%|                                                                     
 /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/pcdet/models/backbones_3d/vfe/image_vfe_modules/f2v/voxel_field_fusion.py:335: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
   grid_count = (grid_count > 0) * sample_num // (grid_count > 0).sum()
 /home/xilm/anaconda3/lib/python3.9/site-packages/torch/nn/functional.py:4003: UserWarning: Default grid_sample and affine_grid behavior has changed to align_corners=False since 1.3.0. Please specify align_corners=True if the old behavior is desired. See the documentation of grid_sample for details.
+  warnings.warn(
+eval: 100%|████████████████████████| 3769/3769 [52:03<00:00,  1.21it/s, recall_0.3=(16982, 16974) / 17558]
+2023-03-01 16:48:04,129   INFO  *************** Performance of EPOCH no_number *****************
+2023-03-01 16:48:04,130   INFO  Generate label finished(sec_per_example: 0.8286 second).
+2023-03-01 16:48:04,130   INFO  Model inference finished(sec_per_example: 0.8264 second).
+2023-03-01 16:48:04,130   INFO  recall_roi_0.3: 0.967194
+2023-03-01 16:48:04,130   INFO  recall_rcnn_0.3: 0.966739
+2023-03-01 16:48:04,130   INFO  recall_roi_0.5: 0.933592
+2023-03-01 16:48:04,130   INFO  recall_rcnn_0.5: 0.935870
+2023-03-01 16:48:04,130   INFO  recall_roi_0.7: 0.723431
+2023-03-01 16:48:04,130   INFO  recall_rcnn_0.7: 0.761419
+2023-03-01 16:48:04,131   INFO  Average predicted number of objects(3769 samples): 10.102
+/home/xilm/anaconda3/lib/python3.9/site-packages/numba/core/typed_passes.py:326: NumbaPerformanceWarning: 
+The keyword argument 'parallel=True' was specified but no transformation for parallel execution was possible.
+
+To find out why, try turning on parallel diagnostics, see https://numba.pydata.org/numba-doc/latest/user/parallel.html#diagnostics for help.
+
+File "../pcdet/datasets/kitti/kitti_object_eval_python/eval.py", line 122:
+@numba.jit(nopython=True, parallel=True)
+def d3_box_overlap_kernel(boxes, qboxes, rinc, criterion=-1):
+^
+
+  warnings.warn(errors.NumbaPerformanceWarning(msg,
+/home/xilm/anaconda3/lib/python3.9/site-packages/numba/core/typed_passes.py:326: NumbaPerformanceWarning: 
+The keyword argument 'parallel=True' was specified but no transformation for parallel execution was possible.
+
+To find out why, try turning on parallel diagnostics, see https://numba.pydata.org/numba-doc/latest/user/parallel.html#diagnostics for help.
+
+File "../pcdet/datasets/kitti/kitti_object_eval_python/eval.py", line 122:
+@numba.jit(nopython=True, parallel=True)
+def d3_box_overlap_kernel(boxes, qboxes, rinc, criterion=-1):
+^
+
+  warnings.warn(errors.NumbaPerformanceWarning(msg,
+2023-03-01 16:48:21,386   INFO  Car AP@0.70, 0.70, 0.70:
+bbox AP:96.6364, 89.8416, 89.5038
+bev  AP:90.2178, 88.6308, 88.1166
+3d   AP:89.4560, 83.7295, 79.2599
+aos  AP:96.60, 89.74, 89.33
+Car AP_R40@0.70, 0.70, 0.70:
+bbox AP:98.4871, 94.6869, 94.4155
+bev  AP:95.2331, 91.2757, 90.7180
+3d   AP:92.4038, 85.4613, 82.9967
+aos  AP:98.46, 94.55, 94.20
+Car AP@0.70, 0.50, 0.50:
+bbox AP:96.6364, 89.8416, 89.5038
+bev  AP:96.6934, 94.4182, 89.4720
+3d   AP:96.6350, 94.3649, 89.4522
+aos  AP:96.60, 89.74, 89.33
+Car AP_R40@0.70, 0.50, 0.50:
+bbox AP:98.4871, 94.6869, 94.4155
+bev  AP:98.4688, 96.7290, 94.4677
+3d   AP:98.4473, 96.4748, 94.4157
+aos  AP:98.46, 94.55, 94.20
+Pedestrian AP@0.50, 0.50, 0.50:
+bbox AP:81.3312, 76.6917, 72.2803
+bev  AP:76.6376, 69.3607, 65.1291
+3d   AP:71.8059, 65.2318, 60.6980
+aos  AP:75.26, 70.85, 66.43
+Pedestrian AP_R40@0.50, 0.50, 0.50:
+bbox AP:82.0917, 77.7799, 74.3178
+bev  AP:77.4969, 69.7783, 64.9599
+3d   AP:73.5650, 65.2945, 60.2035
+aos  AP:75.52, 71.28, 67.62
+Pedestrian AP@0.50, 0.25, 0.25:
+bbox AP:81.3312, 76.6917, 72.2803
+bev  AP:84.0699, 80.8809, 78.2432
+3d   AP:84.0281, 80.7510, 77.9367
+aos  AP:75.26, 70.85, 66.43
+Pedestrian AP_R40@0.50, 0.25, 0.25:
+bbox AP:82.0917, 77.7799, 74.3178
+bev  AP:87.4074, 83.3891, 79.0132
+3d   AP:87.3669, 82.4732, 78.8187
+aos  AP:75.52, 71.28, 67.62
+Cyclist AP@0.50, 0.50, 0.50:
+bbox AP:95.4130, 84.2850, 77.6626
+bev  AP:92.9435, 73.7205, 72.0332
+3d   AP:84.8041, 71.8980, 69.4698
+aos  AP:95.26, 83.54, 77.03
+Cyclist AP_R40@0.50, 0.50, 0.50:
+bbox AP:96.8247, 85.6205, 81.1683
+bev  AP:93.5937, 76.6621, 72.2158
+3d   AP:89.3661, 73.0761, 69.9197
+aos  AP:96.66, 84.84, 80.41
+Cyclist AP@0.50, 0.25, 0.25:
+bbox AP:95.4130, 84.2850, 77.6626
+bev  AP:94.9861, 80.5355, 74.3204
+3d   AP:94.9861, 80.5355, 74.3204
+aos  AP:95.26, 83.54, 77.03
+Cyclist AP_R40@0.50, 0.25, 0.25:
+bbox AP:96.8247, 85.6205, 81.1683
+bev  AP:96.0707, 81.6013, 77.2825
+3d   AP:96.0707, 81.6013, 77.2825
+aos  AP:96.66, 84.84, 80.41
+
+2023-03-01 16:48:21,389   INFO  Result is save to /home/xilm/fuxian/Voxel_Field_Fusion/VFF-main/output/kitti_models/VFF_PVRCNN/default/eval/epoch_no_number/val/default
+2023-03-01 16:48:21,389   INFO  ****************Evaluation done.*****************
