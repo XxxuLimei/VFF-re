@@ -1,4 +1,6 @@
+
 训练命令:`python3 test.py --cfg_file cfgs/kitti_models/VFF_PVRCNN.yaml --batch_size 2 --ckpt ../VFF_PVRCNN.pth`  
+
 -------------------------------------  
 修改部分：
 1. 报错如下  
